@@ -1,2 +1,2 @@
-# bootstreap
+# bootstrap
 # bootstrap
