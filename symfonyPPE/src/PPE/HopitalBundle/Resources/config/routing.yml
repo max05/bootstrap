@@ -4,3 +4,6 @@ ppe_hopital_homepage:
     ppe_hopital_accueil:
     path:     /
     defaults: { _controller: PPEHopitalBundle:Default:site.html.twig }
+    ppe_hopital_untlitled:
+    path:     /
+    defaults: { _controller: PPEHopitalBundle:Default:untlitled.html.twig }
