@@ -1,0 +1,3 @@
+ppe_hopital_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PPEHopitalBundle:Default:index }
