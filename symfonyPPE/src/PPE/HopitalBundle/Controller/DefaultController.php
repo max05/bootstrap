@@ -10,4 +10,8 @@ class DefaultController extends Controller
     {
         return $this->render('PPEHopitalBundle:Default:index.html.twig', array('name' => $name));
     }
+    public function accueilAction()
+    {
+    	return $this->render('PPEHopitalBundle:Default:accueil.html.twig';
+    }
 }

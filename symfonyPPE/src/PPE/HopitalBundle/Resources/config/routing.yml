@@ -2,8 +2,8 @@ ppe_hopital_homepage:
     path:     /hello/{name}
     defaults: { _controller: PPEHopitalBundle:Default:index }
     ppe_hopital_accueil:
-    path:     /
-    defaults: { _controller: PPEHopitalBundle:Default:site.html.twig }
+    path:     /accueil
+    defaults: { _controller: PPEHopitalBundle:Default:accueil.html.twig }
     ppe_hopital_untlitled:
-    path:     /
+    path:     /untlitled
     defaults: { _controller: PPEHopitalBundle:Default:untlitled.html.twig }
