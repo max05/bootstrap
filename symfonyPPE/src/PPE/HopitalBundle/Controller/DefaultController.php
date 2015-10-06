@@ -12,6 +12,18 @@ class DefaultController extends Controller
     }
     public function accueilAction()
     {
-    	return $this->render('PPEHopitalBundle:Default:accueil.html.twig';
+        return $this->render('PPEHopitalBundle:Default:accueil.html.twig');
+    }
+    public function medecinAction()
+    {
+        return $this->render('PPEHopitalBundle:Default:medecin.html.twig');
+    }
+    public function servicesAction()
+    {
+        return $this->render('PPEHopitalBundle:Default:services.html.twig');
+    }
+    public function specialiterAction()
+    {
+        return $this->render('PPEHopitalBundle:Default:specialiter.html.twig');
     }
 }

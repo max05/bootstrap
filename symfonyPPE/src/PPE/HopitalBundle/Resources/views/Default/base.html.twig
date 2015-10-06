@@ -1,0 +1,80 @@
+{% extends '::base.html.twig'%}
+{% block styleshoots %}
+ <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block body %}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Premiere ordinateur</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="row">
+	 <div class="col-md-3"></div>
+  <img src="photo-baby.jpg" class="img-circle" alt="Responsive image" width=50% height=50% >
+</div>
+
+<div>
+	<div class="col-md-2">
+<ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="#">Menu</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="{{path('ppe_hopital_accueil',{})}}">Menu
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="{{path('ppe_hopital_accueil',{})}}">Accueil</a></li>
+      <li><a href="{{path('ppe_hopital_services',{})}}">Services</a></li>
+      <li><a href="{{path('ppe_hopital_specialiter',{})}}">Spécialiter</a></li>
+    </ul>
+  </li>
+    <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="{{path('ppe_hopital_accueil',{})}}">Services
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="{{path('ppe_hopital_accueil',{})}}">Accueil</a></li>
+      <li><a href="{{path('ppe_hopital_services',{})}}">Services</a></li>
+      <li><a href="{{path('ppe_hopital_specialiter',{})}}">Spécialiter</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">A propos
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+  <li><a href="#">Horaires</a></li>
+  </li>
+  </ul>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nous contacter
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Plan</a></li>
+      <li><a href="#">Coordonnées</a></li>
+      <li><a href="#">SOUS MENU</a></li> 
+      </li>
+      </ul> 
+</ul>
+</div>
+</div>
+<div class="col-md-2">
+<form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputAmount">Montant en euro</label>
+    <div class="input-group">
+      
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Montant">
+      <div class="input-group-addon">euro</div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Donne l'argent ! </button>
+</form>
+</div>
+</body>
+</html>
+  {% block corps %}{% endblock %}
+{% endblock %}
