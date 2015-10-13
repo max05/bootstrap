@@ -1,0 +1,15 @@
+ppe_hopital_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PPEHopitalBundle:Default:index }
+ppe_hopital_accueil:
+    path:     /accueil
+    defaults: { _controller: PPEHopitalBundle:Default:accueil }
+ppe_hopital_medecin:
+    path:     /medecin
+    defaults: { _controller: PPEHopitalBundle:Default:medecin }
+ppe_hopital_services:
+    path:     /services
+    defaults: { _controller: PPEHopitalBundle:Default:services }
+ppe_hopital_specialiter:
+    path:     /specialiter
+    defaults: { _controller: PPEHopitalBundle:Default:specialiter }
