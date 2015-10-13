@@ -26,4 +26,8 @@ class DefaultController extends Controller
     {
         return $this->render('PPEHopitalBundle:Default:specialiter.html.twig');
     }
+    public function ListAction()
+    {
+        return $this->render('PPEHopitalBundle:Default:List.html.twig');
+    }
 }

@@ -13,3 +13,6 @@ ppe_hopital_services:
 ppe_hopital_specialiter:
     path:     /specialiter
     defaults: { _controller: PPEHopitalBundle:Default:specialiter }
+ppe_hopital_List:
+    path:     /List
+    defaults: { _controller: PPEHopitalBundle:Default:List }

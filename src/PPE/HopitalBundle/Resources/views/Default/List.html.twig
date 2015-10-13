@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="site.html.twig"></script>
+</head>
+<body>
+	<?php
+	mysql_connect("localhosts", "root", "") or die (mysql_error ());
+	mysql_select_db("mydatabase") or die(mysql_error());
+	$strSQL = "SELECT * FROM medecin ORDER BY service";
+	$rs = mysql_query($strSQL);
+	while($row = mysql_fetch_array($rs)) 
+	{
+	  echo $row['nom'] . " " .['prenom'] . " " . ['service'] . "<br />";
+	}
+	mysql_close();
+	?>
+</body>
+</html>
