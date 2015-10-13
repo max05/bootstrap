@@ -1,0 +1,7 @@
+parameters:
+#    hopital_oc_user.example.class: Hopital\OCUserBundle\Example
+
+services:
+#    hopital_oc_user.example:
+#        class: %hopital_oc_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
