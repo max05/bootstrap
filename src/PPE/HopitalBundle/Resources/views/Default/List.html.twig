@@ -7,7 +7,7 @@
 	<?php
 	mysql_connect("localhosts", "root", "") or die (mysql_error ());
 	mysql_select_db("mydatabase") or die(mysql_error());
-	$strSQL = "SELECT * FROM medecin ORDER BY service";
+	$strSQL = "SELECT m.nom,m.prenom,s.nom as service FROM medecin m join service s on m.service=s.id ORDER BY service";
 	$rs = mysql_query($strSQL);
 	while($row = mysql_fetch_array($rs)) 
 	{
