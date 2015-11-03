@@ -1,7 +1,0 @@
-ppe_hopital:
-    resource: "@PPEHopitalBundle/Resources/config/routing.yml"
-    prefix:   /hopital
-ppe_User:
-    resource: "@PPEOCUserBundle/Resources/config/routing.yml"
-    prefix:   /User
-
