@@ -1,0 +1,58 @@
+{% extends '::base.html.twig'%}
+{% block styleshoots %}
+ <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block body %}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Premiere ordinateur</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div>
+<img src="{{ asset('image/aaa.jpg') }}" alt="" width="128" height="128" />
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hopital</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+      <li><a href="{{path('ppe_hopital_identification',{})}}">Identification</a></li>
+      <li><a href="{{path('ppe_hopital_services',{})}}">Demande de Rendez-Vous</a></li>
+      <li><a href="{{path('ppe_hopital_specialiter',{})}}">Spécialiter</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Horaire <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+      <li><a href="{{path('ppe_hopital_accueil',{})}}">Accueil</a></li>
+      <li><a href="{{path('ppe_hopital_services',{})}}">Services</a></li>
+      <li><a href="{{path('ppe_hopital_specialiter',{})}}">Spécialiter</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Consultation <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+      <li><a href="{{path('ppe_hopital_accueil',{})}}">Accueil</a></li>
+      <li><a href="{{path('ppe_hopital_services',{})}}">Services</a></li>
+      <li><a href="{{path('ppe_hopital_specialiter',{})}}">Spécialiter</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+  
+
+</body>
+</html>
+  {% block corps %}{% endblock %}
+{% endblock %}
