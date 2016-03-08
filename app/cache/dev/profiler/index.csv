@@ -5,6 +5,7 @@
 a3b5db,::1,GET,http://localhost/symfonyPPE/web/app_dev.php/services,1446564421,
 b5c467,::1,GET,http://localhost/symfonyPPE/web/app_dev.php/photo-baby.jpg,1446564422,
 74fb7a,::1,GET,http://localhost/symfonyPPE/web/app_dev.php/photo-baby.jpg,1446564422,
+<<<<<<< HEAD
 75f2b7,127.0.0.1,GET,http://localhost/bootstrap/web/app_dev.php/bootstrap/HopitalBundle/medecin,1456846539,
 fc9c50,127.0.0.1,GET,http://localhost/bootstrap/web/app_dev.php/bootstrap/HopitalBundle/medecin,1456846539,
 205fe0,127.0.0.1,GET,http://localhost/bootstrap/web/app_dev.php/PPE/HopitalBundle/medecin,1456846547,
@@ -223,3 +224,5 @@ c7a746,::1,POST,http://localhost/PPEHopital/web/app_dev.php/login.php,1457089419
 40e26e,::1,GET,http://localhost/PPEHopital/web/app_dev.php/accueil,1457440562,
 10121f,::1,GET,http://localhost/PPEHopital/web/app_dev.php/accueil,1457440595,
 f2af8c,::1,GET,http://localhost/PPEHopital/web/app_dev.php/identification,1457440597,
+=======
+>>>>>>> 2b2cba0c440da909982e79a4ac0a5dd839be525c
