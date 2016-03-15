@@ -121,4 +121,11 @@ class Patient
     {
         return $this->prenom;
     }
+
+    /**
+    *@var Rdv $uneRdvPatient
+    *
+    *@ORM\ManyToOne(targetEntity="Rdv")
+    */
+    private $uneRdvPatient;
 }

@@ -80,17 +80,21 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
         // line 33
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
         echo "\">Spécialiter</a></li>
+      <li><a href=\"";
+        // line 34
+        echo $this->env->getExtension('routing')->getPath("ppe_hopital_identification", array());
+        echo "\">Identification</a></li>
         </ul>
       </li>
       <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Horaire <span class=\"caret\"></span></a>
         <ul class=\"dropdown-menu\">
       <li><a href=\"";
-        // line 38
+        // line 39
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_accueil", array());
         echo "\">Accueil</a></li>
 
       <li><a href=\"";
-        // line 40
+        // line 41
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
         echo "\">Spécialiter</a></li>
         </ul>
@@ -98,12 +102,12 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
       <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Consultation <span class=\"caret\"></span></a>
         <ul class=\"dropdown-menu\">
       <li><a href=\"";
-        // line 45
+        // line 46
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_accueil", array());
         echo "\">Accueil</a></li>
 
       <li><a href=\"";
-        // line 47
+        // line 48
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
         echo "\">Spécialiter</a></li>
         </ul>
@@ -116,7 +120,7 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
 </body>
 </html>
   ";
-        // line 57
+        // line 58
         $this->displayBlock('corps', $context, $blocks);
     }
 
@@ -136,6 +140,6 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
 
     public function getDebugInfo()
     {
-        return array (  120 => 57,  107 => 47,  102 => 45,  94 => 40,  89 => 38,  81 => 33,  77 => 32,  73 => 31,  58 => 19,  43 => 6,  40 => 5,  33 => 3,  30 => 2,  31 => 3,  28 => 2,);
+        return array (  124 => 58,  111 => 48,  106 => 46,  98 => 41,  93 => 39,  85 => 34,  81 => 33,  77 => 32,  73 => 31,  58 => 19,  43 => 6,  40 => 5,  33 => 3,  30 => 2,);
     }
 }

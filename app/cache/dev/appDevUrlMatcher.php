@@ -163,6 +163,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::ListAction',  '_route' => 'ppe_hopital_List',);
         }
 
+        // ppe_hopital_identification
+        if ($pathinfo === '/identification') {
+            return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::identificationAction',  '_route' => 'ppe_hopital_identification',);
+        }
+
         // test_test_homepage
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'test_test_homepage')), array (  '_controller' => 'Test\\TestBundle\\Controller\\DefaultController::indexAction',));

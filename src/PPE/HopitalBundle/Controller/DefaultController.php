@@ -30,4 +30,8 @@ class DefaultController extends Controller
     {
         return $this->render('PPEHopitalBundle:Default:List.html.twig');
     }
+        public function identificationAction()
+    {
+        return $this->render('PPEHopitalBundle:Default:identification.html.twig');
+    }
 }
