@@ -3,11 +3,7 @@ parameters:
     database_driver: pdo_mysql
     database_host: 127.0.0.1
     database_port: null
-<<<<<<< HEAD
-    database_name: PPEHopitalPoulmaneWan
-=======
     database_name: ccm
->>>>>>> 2b2cba0c440da909982e79a4ac0a5dd839be525c
     database_user: root
     database_password: null
     mailer_transport: smtp

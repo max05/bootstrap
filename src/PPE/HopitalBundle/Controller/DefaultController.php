@@ -18,9 +18,9 @@ class DefaultController extends Controller
     {
         return $this->render('PPEHopitalBundle:Default:medecin.html.twig');
     }
-    public function servicesAction()
+    public function DemandeRDVAction()
     {
-        return $this->render('PPEHopitalBundle:Default:services.html.twig');
+        return $this->render('PPEHopitalBundle:Default:DemandeRDV.html.twig');
     }
     public function specialiterAction()
     {
@@ -30,11 +30,4 @@ class DefaultController extends Controller
     {
         return $this->render('PPEHopitalBundle:Default:List.html.twig');
     }
-<<<<<<< HEAD
-        public function identificationAction()
-    {
-        return $this->render('PPEHopitalBundle:Default:identification.html.twig');
-    }
-=======
->>>>>>> 2b2cba0c440da909982e79a4ac0a5dd839be525c
 }

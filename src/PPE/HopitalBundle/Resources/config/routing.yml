@@ -7,22 +7,12 @@ ppe_hopital_accueil:
 ppe_hopital_medecin:
     path:     /medecin
     defaults: { _controller: PPEHopitalBundle:Default:medecin }
-ppe_hopital_services:
-    path:     /services
-    defaults: { _controller: PPEHopitalBundle:Default:services }
+ppe_hopital_DemandeRDV:
+    path:     /DemandeRDV
+    defaults: { _controller: PPEHopitalBundle:Default:DemandeRDV }
 ppe_hopital_specialiter:
     path:     /specialiter
     defaults: { _controller: PPEHopitalBundle:Default:specialiter }
 ppe_hopital_List:
     path:     /List
     defaults: { _controller: PPEHopitalBundle:Default:List }
-<<<<<<< HEAD
-ppe_hopital_identification:
-    path:     /identification
-    defaults: { _controller: PPEHopitalBundle:Default:identification }
-ppe_hopital_login:
-    path:     /login
-    defaults: { _controller: PPEHopitalBundle:Default:login }
-
-=======
->>>>>>> 2b2cba0c440da909982e79a4ac0a5dd839be525c

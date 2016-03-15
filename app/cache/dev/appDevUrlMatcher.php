@@ -148,17 +148,14 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::medecinAction',  '_route' => 'ppe_hopital_medecin',);
         }
 
-        if (0 === strpos($pathinfo, '/s')) {
-            // ppe_hopital_services
-            if ($pathinfo === '/services') {
-                return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::servicesAction',  '_route' => 'ppe_hopital_services',);
-            }
+        // ppe_hopital_DemandeRDV
+        if ($pathinfo === '/DemandeRDV') {
+            return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::DemandeRDVAction',  '_route' => 'ppe_hopital_DemandeRDV',);
+        }
 
-            // ppe_hopital_specialiter
-            if ($pathinfo === '/specialiter') {
-                return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::specialiterAction',  '_route' => 'ppe_hopital_specialiter',);
-            }
-
+        // ppe_hopital_specialiter
+        if ($pathinfo === '/specialiter') {
+            return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::specialiterAction',  '_route' => 'ppe_hopital_specialiter',);
         }
 
         // ppe_hopital_List
@@ -166,19 +163,6 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::ListAction',  '_route' => 'ppe_hopital_List',);
         }
 
-<<<<<<< HEAD
-        // ppe_hopital_identification
-        if ($pathinfo === '/identification') {
-            return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::identificationAction',  '_route' => 'ppe_hopital_identification',);
-        }
-
-        // ppe_hopital_login
-        if ($pathinfo === '/login') {
-            return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::loginAction',  '_route' => 'ppe_hopital_login',);
-        }
-
-=======
->>>>>>> 2b2cba0c440da909982e79a4ac0a5dd839be525c
         // test_test_homepage
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'test_test_homepage')), array (  '_controller' => 'Test\\TestBundle\\Controller\\DefaultController::indexAction',));

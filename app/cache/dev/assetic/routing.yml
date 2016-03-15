@@ -2,8 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-<<<<<<< HEAD
     resource: 'C:/wamp/www/PPEHopital/app/config/routing_dev.yml'
-=======
-    resource: 'C:/wamp/www/symfonyPPE/app/config/routing_dev.yml'
->>>>>>> 2b2cba0c440da909982e79a4ac0a5dd839be525c

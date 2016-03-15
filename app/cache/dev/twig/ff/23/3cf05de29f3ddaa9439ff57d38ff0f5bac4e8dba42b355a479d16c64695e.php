@@ -62,7 +62,7 @@ class __TwigTemplate_ff233cf05de29f3ddaa9439ff57d38ff0f5bac4e8dba42b355a479d16c6
 <nav class=\"navbar navbar-inverse\">
   <div class=\"container-fluid\">
     <div class=\"navbar-header\">
-      <a class=\"navbar-brand\" href=\"#\">WebSiteName</a>
+      <a class=\"navbar-brand\" href=\"#\">Hopital</a>
     </div>
     <ul class=\"nav navbar-nav\">
       <li class=\"active\"><a href=\"#\">Home</a></li>
@@ -74,8 +74,8 @@ class __TwigTemplate_ff233cf05de29f3ddaa9439ff57d38ff0f5bac4e8dba42b355a479d16c6
         echo "\">Accueil</a></li>
       <li><a href=\"";
         // line 32
-        echo $this->env->getExtension('routing')->getPath("ppe_hopital_services", array());
-        echo "\">Services</a></li>
+        echo $this->env->getExtension('routing')->getPath("ppe_hopital_DemandeRDV", array());
+        echo "\">Demande de Rendez-Vous</a></li>
       <li><a href=\"";
         // line 33
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
@@ -88,10 +88,7 @@ class __TwigTemplate_ff233cf05de29f3ddaa9439ff57d38ff0f5bac4e8dba42b355a479d16c6
         // line 38
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_accueil", array());
         echo "\">Accueil</a></li>
-      <li><a href=\"";
-        // line 39
-        echo $this->env->getExtension('routing')->getPath("ppe_hopital_services", array());
-        echo "\">Services</a></li>
+
       <li><a href=\"";
         // line 40
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
@@ -104,10 +101,7 @@ class __TwigTemplate_ff233cf05de29f3ddaa9439ff57d38ff0f5bac4e8dba42b355a479d16c6
         // line 45
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_accueil", array());
         echo "\">Accueil</a></li>
-      <li><a href=\"";
-        // line 46
-        echo $this->env->getExtension('routing')->getPath("ppe_hopital_services", array());
-        echo "\">Services</a></li>
+
       <li><a href=\"";
         // line 47
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
@@ -142,6 +136,6 @@ class __TwigTemplate_ff233cf05de29f3ddaa9439ff57d38ff0f5bac4e8dba42b355a479d16c6
 
     public function getDebugInfo()
     {
-        return array (  126 => 57,  113 => 47,  109 => 46,  105 => 45,  97 => 40,  93 => 39,  89 => 38,  81 => 33,  77 => 32,  73 => 31,  58 => 19,  43 => 6,  40 => 5,  33 => 3,  30 => 2,);
+        return array (  120 => 57,  107 => 47,  102 => 45,  94 => 40,  89 => 38,  81 => 33,  77 => 32,  73 => 31,  58 => 19,  43 => 6,  40 => 5,  33 => 3,  30 => 2,);
     }
 }
