@@ -19,3 +19,6 @@ ppe_hopital_List:
 ppe_hopital_identification:
     path:     /identification
     defaults: { _controller: PPEHopitalBundle:Default:identification }
+ppe_hopital_login:
+    path:     /login
+    defaults: { _controller: PPEHopitalBundle:Default:login }

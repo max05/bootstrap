@@ -52,12 +52,7 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
   <script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js\"></script>
 </head>
 <body>
-<div>
-<img src=\"";
-        // line 19
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("image/aaa.jpg"), "html", null, true);
-        echo "\" alt=\"\" width=\"128\" height=\"128\" />
-</div>
+
 
 <nav class=\"navbar navbar-inverse\">
   <div class=\"container-fluid\">
@@ -69,19 +64,19 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
       <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Menu <span class=\"caret\"></span></a>
         <ul class=\"dropdown-menu\">
       <li><a href=\"";
-        // line 31
+        // line 29
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_accueil", array());
         echo "\">Accueil</a></li>
       <li><a href=\"";
-        // line 32
+        // line 30
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_DemandeRDV", array());
         echo "\">Demande de Rendez-Vous</a></li>
       <li><a href=\"";
-        // line 33
+        // line 31
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
         echo "\">Spécialiter</a></li>
       <li><a href=\"";
-        // line 34
+        // line 32
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_identification", array());
         echo "\">Identification</a></li>
         </ul>
@@ -89,12 +84,12 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
       <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Horaire <span class=\"caret\"></span></a>
         <ul class=\"dropdown-menu\">
       <li><a href=\"";
-        // line 39
+        // line 37
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_accueil", array());
         echo "\">Accueil</a></li>
 
       <li><a href=\"";
-        // line 41
+        // line 39
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
         echo "\">Spécialiter</a></li>
         </ul>
@@ -102,12 +97,12 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
       <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Consultation <span class=\"caret\"></span></a>
         <ul class=\"dropdown-menu\">
       <li><a href=\"";
-        // line 46
+        // line 44
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_accueil", array());
         echo "\">Accueil</a></li>
 
       <li><a href=\"";
-        // line 48
+        // line 46
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
         echo "\">Spécialiter</a></li>
         </ul>
@@ -120,7 +115,7 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
 </body>
 </html>
   ";
-        // line 58
+        // line 56
         $this->displayBlock('corps', $context, $blocks);
     }
 
@@ -140,6 +135,6 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
 
     public function getDebugInfo()
     {
-        return array (  124 => 58,  111 => 48,  106 => 46,  98 => 41,  93 => 39,  85 => 34,  81 => 33,  77 => 32,  73 => 31,  58 => 19,  43 => 6,  40 => 5,  33 => 3,  30 => 2,);
+        return array (  119 => 56,  106 => 46,  101 => 44,  93 => 39,  88 => 37,  80 => 32,  76 => 31,  72 => 30,  68 => 29,  43 => 6,  40 => 5,  33 => 3,  30 => 2,);
     }
 }
