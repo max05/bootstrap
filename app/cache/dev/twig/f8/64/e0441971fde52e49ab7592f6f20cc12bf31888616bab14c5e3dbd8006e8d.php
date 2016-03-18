@@ -28,9 +28,7 @@ class __TwigTemplate_f864e0441971fde52e49ab7592f6f20cc12bf31888616bab14c5e3dbd80
     public function block_corps($context, array $blocks = array())
     {
         // line 3
-        echo "<!DOCTYPE html>
-
-<form  method=\"POST\" action=\"\">
+        echo "<form  method=\"POST\" action=\"\">
 <table align=\"center\" border=\"0\">
   <tr>
     <td>Login :</td>

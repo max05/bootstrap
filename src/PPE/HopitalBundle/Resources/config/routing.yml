@@ -22,3 +22,9 @@ ppe_hopital_identification:
 ppe_hopital_login:
     path:     /login
     defaults: { _controller: PPEHopitalBundle:Default:login }
+ppe_hopital_secretaire:
+    path:     /secretaire
+    defaults: { _controller: PPEHopitalBundle:Default:secretaire }
+ppe_hopital_modifSecretaire:
+    path:     /modifSecretaire
+    defaults: { _controller: PPEHopitalBundle:Default:modifSecretaire }

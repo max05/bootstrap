@@ -30,7 +30,7 @@ class __TwigTemplate_5be7ee2584c5baa811ba0fbb166e055eca6839e5994f0fe3a93d17f2d7a
         // line 3
         echo "<!DOCTYPE html>
 
-<form  method=\"POST\" action=\"identificationAction\">
+<form  method=\"POST\" action=\"secretaireModifAction\">
 <table align=\"center\" border=\"0\">
   <tr>
     <td colspan=\"2\" align=\"center\"><input type=\"button\" value=\"Se déconnecter\"></td>
