@@ -4,6 +4,7 @@ namespace PPE\HopitalBundle\Controller;
     use PPE\HopitalBundle\form\SecretaireType;
     use PPE\HopitalBundle\Entity\Secretaire;
     use Symfony\Component\HttpFoundation\Request;
+    use Symfony\Component\HttpFoundation\Response;
 
     class DefaultController extends Controller
     {
@@ -31,38 +32,50 @@ namespace PPE\HopitalBundle\Controller;
         {
             return $this->render('PPEHopitalBundle:Default:List.html.twig');
         }
-        public function identificationAction()
+        public function identificationPatientAction(Request $request)
         {
 
-            $db = mysql_connect('localhost' , 'root','');
-            mysql_select_db('ppehopitalpoulmanewan',$db);
+            // $db = mysql_connect('localhost' , 'root','');
+            // mysql_select_db('ppehopitalpoulmanewan',$db);
 
 
-            if(isset($_POST) && !empty($_POST['login']) && !empty($_POST['mdp'])) {
-                extract($_POST);
-             // on recupère le password de la table qui correspond au login du visiteur
-                $sql = "select mdp from patient where nom='".$login."'";
-                $req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+            // if(isset($_POST) && !empty($_POST['login']) && !empty($_POST['mdp'])) {
+            //     extract($_POST);
+            //  // on recupère le password de la table qui correspond au login du visiteur
+            //     $sql = "select mdp from patient where nom='".$login."'";
+            //     $req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
 
-                $data = mysql_fetch_assoc($req);
+            //     $data = mysql_fetch_assoc($req);
 
-                if($data['mdp'] != $mdp) {
-                    echo '<p>Mauvais login / password. Merci de recommencer</p>';
-                    return $this->render('PPEHopitalBundle:Default:identification.html.twig');
-                    exit;
-                }
-                else {
-                    session_start();
+            //     if($data['mdp'] != $mdp) {
+            //         echo '<p>Mauvais login / password. Merci de recommencer</p>';
+            //         return $this->render('PPEHopitalBundle:Default:identificationPatient.html.twig');
+            //         exit;
+            //     }
+            //     else {
+            //         session_start();
 
-                    $_SESSION['nom'] = $login;
+            //         $_SESSION['nom'] = $login;
 
-                    echo 'Vous êtes bien logué en tant que : ',$login;
-                    return $this->render('PPEHopitalBundle:Default:login.html.twig');
-                }   
-            }
-            mysql_close();
+            //         echo '<p>Vous êtes bien logué en tant que : </p>',$login;
+            //         return $this->render('PPEHopitalBundle:Default:login.html.twig');
+            //     }   
+            // }
+            // mysql_close();
 
-            return $this->render('PPEHopitalBundle:Default:identification.html.twig');
+            $doctrine=$this->getDoctrine();
+            $entityManager=$doctrine->getManager();
+            $repository=$entityManager->getRepository('PPEHopitalBundle:Patient');
+            $lesPatients=$repository->findAll();
+            $session = $request->getSession();
+            $userId = $session->get('id');
+
+
+            return $this->render('PPEHopitalBundle:Default:identificationPatient.html.twig');
+        }
+        public function identificationSecretaireAction()
+        {
+            return $this->render('PPEHopitalBundle:Default:identificationSecretaire.html.twig');
         }
 
         public function loginAction()
@@ -77,7 +90,7 @@ namespace PPE\HopitalBundle\Controller;
             $lesSecretaire=$repository->findAll();
 
 
-            return $this->render('PPEHopitalBundle:Default:secrétaire.html.twig',array('secretaires'=>$lesSecretaire));
+            return $this->render('PPEHopitalBundle:Default:secretaire.html.twig',array('secretaires'=>$lesSecretaire));
         }
     
     public function modifSecretaireAction(Request $request)

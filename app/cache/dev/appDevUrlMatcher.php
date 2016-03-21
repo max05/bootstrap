@@ -163,9 +163,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::ListAction',  '_route' => 'ppe_hopital_List',);
         }
 
-        // ppe_hopital_identification
-        if ($pathinfo === '/identification') {
-            return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::identificationAction',  '_route' => 'ppe_hopital_identification',);
+        if (0 === strpos($pathinfo, '/identification')) {
+            // ppe_hopital_identificationPatient
+            if ($pathinfo === '/identificationPatient') {
+                return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::identificationPatientAction',  '_route' => 'ppe_hopital_identificationPatient',);
+            }
+
+            // ppe_hopital_identificationSecretaire
+            if ($pathinfo === '/identificationSecretaire') {
+                return array (  '_controller' => 'PPE\\HopitalBundle\\Controller\\DefaultController::identificationSecretaireAction',  '_route' => 'ppe_hopital_identificationSecretaire',);
+            }
+
         }
 
         // ppe_hopital_login

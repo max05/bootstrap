@@ -44,7 +44,7 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Premiere ordinateur</title>
+  <title>Hopital</title>
   <meta charset=\"utf-8\">
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
   <link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\">
@@ -60,8 +60,13 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
       <a class=\"navbar-brand\" href=\"#\">Hopital</a>
     </div>
     <ul class=\"nav navbar-nav\">
-      <li class=\"active\"><a href=\"#\">Home</a></li>
-      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Menu <span class=\"caret\"></span></a>
+      <li><a href=\"#\">Home</a></li>
+      <li class=\"dropdown ";
+        // line 27
+        if (twig_in_filter($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request"), "attributes"), "get", array(0 => "_route"), "method"), array(0 => "ppe_hopital_accueil", 1 => "ppe_hopital_DemandeRDV", 2 => "ppe_hopital_specialiter"))) {
+            echo "active";
+        }
+        echo "\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Menu <span class=\"caret\"></span></a>
         <ul class=\"dropdown-menu\">
       <li><a href=\"";
         // line 29
@@ -75,21 +80,17 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
         // line 31
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
         echo "\">Spécialiter</a></li>
-      <li><a href=\"";
-        // line 32
-        echo $this->env->getExtension('routing')->getPath("ppe_hopital_identification", array());
-        echo "\">Identification</a></li>
         </ul>
       </li>
       <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Horaire <span class=\"caret\"></span></a>
         <ul class=\"dropdown-menu\">
       <li><a href=\"";
-        // line 37
+        // line 36
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_accueil", array());
         echo "\">Accueil</a></li>
 
       <li><a href=\"";
-        // line 39
+        // line 38
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
         echo "\">Spécialiter</a></li>
         </ul>
@@ -97,17 +98,25 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
       <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Consultation <span class=\"caret\"></span></a>
         <ul class=\"dropdown-menu\">
       <li><a href=\"";
-        // line 44
+        // line 43
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_accueil", array());
         echo "\">Accueil</a></li>
 
       <li><a href=\"";
-        // line 46
+        // line 45
         echo $this->env->getExtension('routing')->getPath("ppe_hopital_specialiter", array());
         echo "\">Spécialiter</a></li>
         </ul>
       </li>
     </ul>
+    <li><a href=\"";
+        // line 49
+        echo $this->env->getExtension('routing')->getPath("ppe_hopital_identificationPatient", array());
+        echo "\">Connexion patient</a></li>
+    <li><a href=\"";
+        // line 50
+        echo $this->env->getExtension('routing')->getPath("ppe_hopital_identificationSecretaire", array());
+        echo "\">Connexion secrétaire</a></li>
   </div>
 </nav>
   
@@ -115,7 +124,7 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
 </body>
 </html>
   ";
-        // line 56
+        // line 57
         $this->displayBlock('corps', $context, $blocks);
     }
 
@@ -135,6 +144,6 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
 
     public function getDebugInfo()
     {
-        return array (  119 => 56,  106 => 46,  101 => 44,  93 => 39,  88 => 37,  80 => 32,  76 => 31,  72 => 30,  68 => 29,  43 => 6,  40 => 5,  33 => 3,  30 => 2,);
+        return array (  128 => 57,  118 => 50,  114 => 49,  107 => 45,  102 => 43,  94 => 38,  89 => 36,  81 => 31,  77 => 30,  73 => 29,  66 => 27,  43 => 6,  40 => 5,  33 => 3,  30 => 2,);
     }
 }

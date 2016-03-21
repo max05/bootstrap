@@ -16,9 +16,12 @@ ppe_hopital_specialiter:
 ppe_hopital_List:
     path:     /List
     defaults: { _controller: PPEHopitalBundle:Default:List }
-ppe_hopital_identification:
-    path:     /identification
-    defaults: { _controller: PPEHopitalBundle:Default:identification }
+ppe_hopital_identificationPatient:
+    path:     /identificationPatient
+    defaults: { _controller: PPEHopitalBundle:Default:identificationPatient }
+ppe_hopital_identificationSecretaire:
+    path:     /identificationSecretaire
+    defaults: { _controller: PPEHopitalBundle:Default:identificationSecretaire }
 ppe_hopital_login:
     path:     /login
     defaults: { _controller: PPEHopitalBundle:Default:login }
