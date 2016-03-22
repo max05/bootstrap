@@ -3,6 +3,8 @@ namespace PPE\HopitalBundle\Controller;
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
     use PPE\HopitalBundle\form\SecretaireType;
     use PPE\HopitalBundle\Entity\Secretaire;
+    use PPE\HopitalBundle\Entity\Patient;
+    use PPE\HopitalBundle\form\PatientType;
     use Symfony\Component\HttpFoundation\Request;
     use Symfony\Component\HttpFoundation\Response;
 
@@ -34,41 +36,22 @@ namespace PPE\HopitalBundle\Controller;
         }
         public function identificationPatientAction(Request $request)
         {
+            $unPatient=new Patient();
+            $formBuilder=$this->createFormBuilder($unPatient);
+            $formBuilder->findby('nom');
+            $formBuilder->findby('mdp');
+            $form=$formBuilder->getForm();
+            if ($request->getMethod()=='POST')
+            {
+                $form->bind($request);
+                if ($form->isValid())
+                {
+                    $em = $this->getDoctrine()->getManager();
+                    $em->persist($unPatient);
+                    $em->flush();
+                }
+            }
 
-            // $db = mysql_connect('localhost' , 'root','');
-            // mysql_select_db('ppehopitalpoulmanewan',$db);
-
-
-            // if(isset($_POST) && !empty($_POST['login']) && !empty($_POST['mdp'])) {
-            //     extract($_POST);
-            //  // on recupère le password de la table qui correspond au login du visiteur
-            //     $sql = "select mdp from patient where nom='".$login."'";
-            //     $req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
-
-            //     $data = mysql_fetch_assoc($req);
-
-            //     if($data['mdp'] != $mdp) {
-            //         echo '<p>Mauvais login / password. Merci de recommencer</p>';
-            //         return $this->render('PPEHopitalBundle:Default:identificationPatient.html.twig');
-            //         exit;
-            //     }
-            //     else {
-            //         session_start();
-
-            //         $_SESSION['nom'] = $login;
-
-            //         echo '<p>Vous êtes bien logué en tant que : </p>',$login;
-            //         return $this->render('PPEHopitalBundle:Default:login.html.twig');
-            //     }   
-            // }
-            // mysql_close();
-
-            $doctrine=$this->getDoctrine();
-            $entityManager=$doctrine->getManager();
-            $repository=$entityManager->getRepository('PPEHopitalBundle:Patient');
-            $lesPatients=$repository->findAll();
-            $session = $request->getSession();
-            $userId = $session->get('id');
 
 
             return $this->render('PPEHopitalBundle:Default:identificationPatient.html.twig');

@@ -60,7 +60,10 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
       <a class=\"navbar-brand\" href=\"#\">Hopital</a>
     </div>
     <ul class=\"nav navbar-nav\">
-      <li><a href=\"#\">Home</a></li>
+      <li><a href=\"";
+        // line 26
+        echo $this->env->getExtension('routing')->getPath("ppe_hopital_accueil", array());
+        echo "\">Accueil</a>\">Home</a></li>
       <li class=\"dropdown ";
         // line 27
         if (twig_in_filter($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request"), "attributes"), "get", array(0 => "_route"), "method"), array(0 => "ppe_hopital_accueil", 1 => "ppe_hopital_DemandeRDV", 2 => "ppe_hopital_specialiter"))) {
@@ -82,7 +85,7 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
         echo "\">Spécialiter</a></li>
         </ul>
       </li>
-      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Horaire <span class=\"caret\"></span></a>
+      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"\">Horaire <span class=\"caret\"></span></a>
         <ul class=\"dropdown-menu\">
       <li><a href=\"";
         // line 36
@@ -144,6 +147,6 @@ class __TwigTemplate_4dac6a9aef5ad40c8457157d4d525431a5546f3c66bca17d7c2b63f2615
 
     public function getDebugInfo()
     {
-        return array (  128 => 57,  118 => 50,  114 => 49,  107 => 45,  102 => 43,  94 => 38,  89 => 36,  81 => 31,  77 => 30,  73 => 29,  66 => 27,  43 => 6,  40 => 5,  33 => 3,  30 => 2,);
+        return array (  131 => 57,  121 => 50,  117 => 49,  110 => 45,  105 => 43,  97 => 38,  92 => 36,  84 => 31,  80 => 30,  76 => 29,  69 => 27,  65 => 26,  43 => 6,  40 => 5,  33 => 3,  30 => 2,);
     }
 }
